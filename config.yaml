@@ -234,11 +234,11 @@ keybindings:
 
   # Minimize focused window.
   - commands: ['toggle-minimized']
-    bindings: ['f17+m']
+    bindings: ['f17+q']
 
   # Close focused window.
   - commands: ['close']
-    bindings: ['f17+w']
+    bindings: ['f17+shift+w']
 
   # Kill GlazeWM process safely.
   - commands: ['wm-exit']
