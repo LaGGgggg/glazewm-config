@@ -136,6 +136,13 @@ workspaces:
   - name: '9'
 
 window_rules:
+  - commands: ['move --workspace 2', 'focus --workspace 2']
+    match:
+      - window_process: { regex: 'chrome|firefox|msedge|opera' }
+
+  - commands: ['move --workspace 4', 'focus --workspace 4']
+    match:
+      - window_title: { equals: 'AmneziaVPN' }
   - commands: ['ignore']
     match:
       # Ignores any Zebar windows.
