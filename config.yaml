@@ -143,6 +143,12 @@ window_rules:
   - commands: ['move --workspace 4', 'focus --workspace 4']
     match:
       - window_title: { equals: 'AmneziaVPN' }
+
+  - commands: ['set-floating']
+    match:
+      - window_title: { equals: 'Telegram' }
+      - window_title: { equals: 'AmneziaVPN' }
+
   - commands: ['ignore']
     match:
       # Ignores any Zebar windows.
