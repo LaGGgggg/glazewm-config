@@ -177,6 +177,13 @@ window_rules:
       # Ignore Apple Passwords push
       - window_class: { equals: '#32770' }
 
+      # Ignore Seagate Toolkit app window
+      - window_title: { equals: 'Toolkit' }
+        window_class: { regex: 'HwndWrapper\[Toolkit\.exe.*?\]' }
+
+      # Ignore JetBrains dialogs
+      - window_class: { equals: 'SunAwtDialog' }
+
 binding_modes:
   # When enabled, the focused window can be resized via arrow keys or HJKL.
   - name: 'resize'
