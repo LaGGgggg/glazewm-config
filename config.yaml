@@ -148,6 +148,10 @@ window_rules:
     match:
       - window_title: { equals: 'Telegram' }
       - window_title: { equals: 'AmneziaVPN' }
+      - window_title: { regex: '- File Explorer$' }
+      - window_class: { equals: 'MozillaWindowClass' }
+        window_title: { regex: '- Thunderbird$' }
+      - window_class: { equals: 'TaskManagerWindow' }
   
   - commands: ['set-tiling']
     match:
