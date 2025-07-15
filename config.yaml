@@ -136,11 +136,11 @@ workspaces:
   - name: '9'
 
 window_rules:
-  - commands: ['move --workspace 4', 'focus --workspace 4']
+  - commands: ['move --workspace 4']
     match:
       - window_process: { regex: 'chrome|firefox|msedge|opera' }
 
-  - commands: ['move --workspace 5', 'focus --workspace 5']
+  - commands: ['move --workspace 5']
     match:
       - window_title: { equals: 'AmneziaVPN' }
 
