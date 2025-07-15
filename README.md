@@ -2,10 +2,46 @@ My config for the [GlazeWM](https://github.com/glzr-io/glazewm)
 
 Changes from the default [sample-config](https://github.com/glzr-io/glazewm/blob/main/resources/assets/sample-config.yaml):
 - Visual
-  - Removed window gaps
-  - Reduced top window gap (60px -> 30px)
+  - Removed window inner gaps
+  - Reduced window top outer gap (60px -> 30px)
+  - Removed window right, bottom and left outer gaps
   - Changed workspaces display names
-  - A lot of keybindings changes (note that I'm actively using the `f17` button)
 - Feautres
-  - Keybindings for moving focused window to a workspace without focusing on it
+  - Changed workspace display names
+    - 1 -> [d]efault
+    - 2 -> [c]ode
+    - 3 -> [a]dditional
+    - 4 -> [b]rowser
+    - 5 -> [B]ackground
+  - Window rules
+    - All browsers are moving to the 4 workspace
+    - AmneziaVPN is moving to the 5 workspace
+    - Floating mode for: Telegram, AmneziaVPN, Windows File Explorer, Thunderbird floating windows, Windows Task Manager
+    - Tiling mode for Neovim
+    - Ignore: Apple Passwords push, Seagate Toolkit, JetBrains dialogs
+  - Keybindings
+    - Shift focus: `alt+h` and `alt+left` -> `f17+h` (similarly for right, up and down)
+    - Move focused window: `alt+shift+h` and `alt+shift+left` -> `f17+shift+h` (similarly for right, up and down)
+    - Resize focused window: `alt+u` -> `f17+ctrl+l` (similarly for others)
+    - Removed
+      - Resize binding mode
+      - Toggle tiling direction
+      - Focus cycle
+      - Redraw all windows
+      - Launch cmd terminal
+      - Focus last workspace
+      - Move the focused window's parent workspace to a monitor
+    - Pause toggle: `alt+shift+p` -> `f17+alt+p`
+    - Floating mode: `alt+shift+space` -> `f17+shift+f`
+    - Tiling mode: `alt+t` -> `f17+t`
+    - Fullscreen mode: `alt+f` -> `f17+t`
+    - Minimize: `alt+m` -> `f17+q`
+    - Close: `alt+shift+q` -> `f17+shift+w`
+    - Kill GlazeWM: `alt+shift+e` -> `f17+alt+shift+w`
+    - Reload GlazeWM config: `alt+shift+r` -> `f17+alt+r`
+    - Next active workspace: `alt+s` -> `f17+shift+tab`
+    - Previous active workspace: `alt+a` -> `f17+tab`
+    - Change focus to a workspace: `alt-1/2/3/4/5` -> `f17+d/c/a/b/shift+b`
+    - Move focused window to a workspace: `alt+shift+1/2/3/4/5` -> `f17+alt+d/c/a/b/shift+b`
+    - Added shortcuts for moving focused window to a workspace without focus: `f17+alt+ctrl+d/c/a/b/shift+b`
 
