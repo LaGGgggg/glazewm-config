@@ -336,7 +336,6 @@ keybindings:
   - commands: ['move-workspace --direction down']
     bindings: []
 
-
   # Move focused window to a workspace defined in `workspaces` config.
   - commands: ['move --workspace 1', 'focus --workspace 1']
     bindings: ['f17+alt+d']
@@ -357,6 +356,7 @@ keybindings:
   - commands: ['move --workspace 9', 'focus --workspace 9']
     bindings: ['f17+alt+9']
 
+  # Move focused window to a workspace defined in `workspaces` config without focus.
   - commands: ['move --workspace 1']
     bindings: ['f17+alt+ctrl+d']
   - commands: ['move --workspace 2']
