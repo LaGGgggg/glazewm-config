@@ -44,4 +44,3 @@ Changes from the default [sample-config](https://github.com/glzr-io/glazewm/blob
     - Change focus to a workspace: `alt-1/2/3/4/5` -> `f17+d/c/a/b/shift+b`
     - Move focused window to a workspace: `alt+shift+1/2/3/4/5` -> `f17+alt+d/c/a/b/shift+b`
     - Added shortcuts for moving focused window to a workspace without focus: `f17+alt+ctrl+d/c/a/b/shift+b`
-

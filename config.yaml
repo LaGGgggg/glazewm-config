@@ -375,4 +375,3 @@ keybindings:
     bindings: ['f17+alt+ctrl+8']
   - commands: ['move --workspace 9']
     bindings: ['f17+alt+ctrl+9']
-
